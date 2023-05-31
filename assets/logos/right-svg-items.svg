@@ -1,0 +1,13 @@
+<svg width="110" height="384" viewBox="0 0 110 384" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="7.5" cy="7.5" r="7.5" transform="matrix(-1 0 0 1 110 125)" fill="#753BBD" />
+    <circle cx="7.5" cy="7.5" r="7.5" transform="matrix(-1 0 0 1 110 247)" fill="#753BBD" />
+    <circle cx="7.5" cy="7.5" r="7.5" transform="matrix(-1 0 0 1 110 369)" fill="#753BBD" />
+    <circle cx="7.5" cy="7.5" r="7.5" transform="matrix(-1 0 0 1 15 125)" fill="#753BBD" />
+    <circle cx="7.5" cy="7.5" r="7.5" transform="matrix(-1 0 0 1 15 247)" fill="#753BBD" />
+    <circle cx="7.5" cy="7.5" r="7.5" transform="matrix(-1 0 0 1 15 369)" fill="#753BBD" />
+    <circle cx="7.5" cy="7.5" r="7.5" transform="matrix(-1 0 0 1 15 0)" fill="#753BBD" />
+    <line x1="7.5" y1="376.001" x2="6.49998" y2="7.00138" stroke="#753BBD" />
+    <line y1="-0.5" x2="95" y2="-0.5" transform="matrix(-1 0 0 1 102 133)" stroke="#753BBD" />
+    <line y1="-0.5" x2="95" y2="-0.5" transform="matrix(-1 0 0 1 102 254)" stroke="#753BBD" />
+    <line y1="-0.5" x2="95" y2="-0.5" transform="matrix(-1 0 0 1 102 377)" stroke="#753BBD" />
+</svg>
