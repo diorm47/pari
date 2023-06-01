@@ -28,11 +28,11 @@
           <img src="./assets/logos/Pari logo.svg" alt="header logo" />
         </a>
         <div class="navbar-nav">
-          <a class="nav-link" href="#">О компании</a>
-          <a class="nav-link" href="#">Data Team</a>
-          <a class="nav-link" href="#">Наш стек</a>
-          <a class="nav-link" href="#">Вакансии</a>
-          <a class="nav-link" href="#">Бонус за рекомендацию</a>
+          <p class="nav-link scroll_to_second_view">О компании</p>
+          <p class="nav-link scroll_to_team_block">Data Team</p>
+          <p class="nav-link scroll_to_tecnologies_block">Наш стек</p>
+          <p class="nav-link scroll_to_vacancies_block">Вакансии</p>
+          <p class="nav-link">Бонус за рекомендацию</p>
         </div>
       </div>
     </nav>
@@ -372,32 +372,7 @@
           </div>
         </div>
         <div class="vakancies_lists">
-          <div class="vakancy_list_item_wrapper">
-            <div class="vakancy_list_item">
-              <div class="vakancy_list_item_1"><p>24.04.23</p></div>
-              <div class="vakancy_list_item_2"><p>Data Scientist</p></div>
-              <div class="vakancy_list_item_3">
-                <p>Business Intelligence</p>
-              </div>
-              <div class="vakancy_list_item_4">
-                <p>по результатам собеседования</p>
-              </div>
-              <div class="vakancy_list_item_5">
-                <div class="companies_logos">
-                  <img src="./assets/logos/hh-ru-logo.svg" alt="" />
-                  <img src="./assets/logos/linkedin-logo.svg" alt="" />
-                </div>
-                <div class="list_5_btns">
-                  <button>Оставить отклик</button>
-                  <button class="list_5_btn">
-                    Рекомендовать <br />
-                    другу
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="vakancy_list_item_wrapper">
+          <div id="item1" class="vakancy_list_item_wrapper">
             <div class="vakancy_list_item">
               <div class="vakancy_list_item_1"><p>24.04.23</p></div>
               <div class="vakancy_list_item_2"><p>Data Scientist</p></div>
@@ -416,7 +391,7 @@
                   <img src="./assets/logos/linkedin-logo.svg" alt="" />
                 </div>
                 <div class="list_5_btns">
-                  <button>Оставить отклик</button>
+                  <button data-target="item1">Оставить отклик</button>
                   <button class="list_5_btn">
                     Рекомендовать <br />
                     другу
@@ -424,9 +399,87 @@
                 </div>
               </div>
             </div>
+            <div class="about_vacancy">
+              <div class="about_vacancy_top">
+                <div class="about_vacancy_top_left">
+                  <p class="about_top_text">Особые условия</p>
+                  <div>
+                    <div class="upload_test">
+                      <p>
+                        1. Требуется выполнение <span>тестового задания</span>
+                      </p>
+                      <img src="./assets/logos/file-upload.svg" alt="" />
+                    </div>
+                    <p>2. <span>Релокация</span> в Белград (Сербия)</p>
+                  </div>
+                </div>
+                <div class="about_vacancy_top_right">
+                  <p class="about_top_text">Уровень знаний</p>
+                  <button>Middle</button>
+                </div>
+              </div>
+              <div class="about_vacancy_wrapper">
+                <div class="about_vacancy_wrapper_blocks">
+                  <h4>Обязанности</h4>
+                  <div class="about_wrapper_list">
+                    <div>
+                      <div></div>
+                      <p>Фулл стек DS</p>
+                    </div>
+                    <div>
+                      <div></div>
+                      <p>
+                        От идей до оценки эффективности готового продукта.
+                        Работа ведётся при регулярном общении с
+                        бизнес-заказчиком
+                      </p>
+                    </div>
+
+                    <div>
+                      <div></div>
+                      <p>Сервис и деплой на python разработчике.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="about_vacancy_wrapper_blocks">
+                  <h4>Требования</h4>
+                  <div class="about_wrapper_list">
+                    <div>
+                      <div></div>
+                      <p>
+                        Владение алгоритмами работы с табличными
+                        пространственными данными, временными рядами, аудио,
+                        текстами, гео процессами (опыт от 2 лет совокупно)
+                      </p>
+                    </div>
+                    <div>
+                      <div></div>
+                      <p>
+                        Python3, включая стек библиотек для работы с машинным
+                        обучением
+                      </p>
+                    </div>
+
+                    <div>
+                      <div></div>
+                      <p>
+                        Общение с бизнесом по проектам машинного обучения,
+                        ориентацией на бизнес результат, для senior
+                        дополнительный опыт управления проектами, в которых
+                        участвует несколько команд
+                      </p>
+                    </div>
+                    <div>
+                      <div></div>
+                      <p>sql, jupyter, pycharm, git, jira, confluence.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="vakancy_list_item_wrapper">
-            <!-- <div class="vakancies_top_head">
+          <div id="item2" class="vakancy_list_item_wrapper">
+            <div class="vakancies_top_head">
               <div class="vakancy_list_item">
                 <div class="vakancy_list_item_1"></div>
                 <div class="vakancy_list_item_2"><p>Вакансия</p></div>
@@ -436,7 +489,7 @@
                 </div>
                 <div class="vakancy_list_item_5"></div>
               </div>
-            </div> -->
+            </div>
             <div class="vakancy_list_item">
               <div class="vakancy_list_item_1"><p>24.04.23</p></div>
               <div class="vakancy_list_item_2"><p>Data Scientist</p></div>
@@ -452,11 +505,203 @@
                   <img src="./assets/logos/linkedin-logo.svg" alt="" />
                 </div>
                 <div class="list_5_btns">
-                  <button>Оставить отклик</button>
+                  <button data-target="item2">Оставить отклик</button>
                   <button class="list_5_btn">
                     Рекомендовать <br />
                     другу
                   </button>
+                </div>
+              </div>
+            </div>
+            <div class="about_vacancy">
+              <div class="about_vacancy_top">
+                <div class="about_vacancy_top_left">
+                  <p class="about_top_text">Особые условия</p>
+                  <div>
+                    <div class="upload_test">
+                      <p>
+                        1. Требуется выполнение <span>тестового задания</span>
+                      </p>
+                      <img src="./assets/logos/file-upload.svg" alt="" />
+                    </div>
+                    <p>2. <span>Релокация</span> в Белград (Сербия)</p>
+                  </div>
+                </div>
+                <div class="about_vacancy_top_right">
+                  <p class="about_top_text">Уровень знаний</p>
+                  <button>Middle</button>
+                </div>
+              </div>
+              <div class="about_vacancy_wrapper">
+                <div class="about_vacancy_wrapper_blocks">
+                  <h4>Обязанности</h4>
+                  <div class="about_wrapper_list">
+                    <div>
+                      <div></div>
+                      <p>Фулл стек DS</p>
+                    </div>
+                    <div>
+                      <div></div>
+                      <p>
+                        От идей до оценки эффективности готового продукта.
+                        Работа ведётся при регулярном общении с
+                        бизнес-заказчиком
+                      </p>
+                    </div>
+
+                    <div>
+                      <div></div>
+                      <p>Сервис и деплой на python разработчике.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="about_vacancy_wrapper_blocks">
+                  <h4>Требования</h4>
+                  <div class="about_wrapper_list">
+                    <div>
+                      <div></div>
+                      <p>
+                        Владение алгоритмами работы с табличными
+                        пространственными данными, временными рядами, аудио,
+                        текстами, гео процессами (опыт от 2 лет совокупно)
+                      </p>
+                    </div>
+                    <div>
+                      <div></div>
+                      <p>
+                        Python3, включая стек библиотек для работы с машинным
+                        обучением
+                      </p>
+                    </div>
+
+                    <div>
+                      <div></div>
+                      <p>
+                        Общение с бизнесом по проектам машинного обучения,
+                        ориентацией на бизнес результат, для senior
+                        дополнительный опыт управления проектами, в которых
+                        участвует несколько команд
+                      </p>
+                    </div>
+                    <div>
+                      <div></div>
+                      <p>sql, jupyter, pycharm, git, jira, confluence.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="item3" class="vakancy_list_item_wrapper">
+            <div class="vakancies_top_head">
+              <div class="vakancy_list_item">
+                <div class="vakancy_list_item_1"></div>
+                <div class="vakancy_list_item_2"><p>Вакансия</p></div>
+                <div class="vakancy_list_item_3"><p>Отдел</p></div>
+                <div class="vakancy_list_item_4">
+                  <p>Условия оплаты труда</p>
+                </div>
+                <div class="vakancy_list_item_5"></div>
+              </div>
+            </div>
+            <div class="vakancy_list_item">
+              <div class="vakancy_list_item_1"><p>24.04.23</p></div>
+              <div class="vakancy_list_item_2"><p>Data Scientist</p></div>
+              <div class="vakancy_list_item_3">
+                <p>Business Intelligence</p>
+              </div>
+              <div class="vakancy_list_item_4">
+                <p>по результатам собеседования</p>
+              </div>
+              <div class="vakancy_list_item_5">
+                <div class="companies_logos">
+                  <img src="./assets/logos/hh-ru-logo.svg" alt="" />
+                  <img src="./assets/logos/linkedin-logo.svg" alt="" />
+                </div>
+                <div class="list_5_btns">
+                  <button data-target="item3">Оставить отклик</button>
+                  <button class="list_5_btn">
+                    Рекомендовать <br />
+                    другу
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="about_vacancy">
+              <div class="about_vacancy_top">
+                <div class="about_vacancy_top_left">
+                  <p class="about_top_text">Особые условия</p>
+                  <div>
+                    <div class="upload_test">
+                      <p>
+                        1. Требуется выполнение <span>тестового задания</span>
+                      </p>
+                      <img src="./assets/logos/file-upload.svg" alt="" />
+                    </div>
+                    <p>2. <span>Релокация</span> в Белград (Сербия)</p>
+                  </div>
+                </div>
+                <div class="about_vacancy_top_right">
+                  <p class="about_top_text">Уровень знаний</p>
+                  <button>Middle</button>
+                </div>
+              </div>
+              <div class="about_vacancy_wrapper">
+                <div class="about_vacancy_wrapper_blocks">
+                  <h4>Обязанности</h4>
+                  <div class="about_wrapper_list">
+                    <div>
+                      <div></div>
+                      <p>Фулл стек DS</p>
+                    </div>
+                    <div>
+                      <div></div>
+                      <p>
+                        От идей до оценки эффективности готового продукта.
+                        Работа ведётся при регулярном общении с
+                        бизнес-заказчиком
+                      </p>
+                    </div>
+
+                    <div>
+                      <div></div>
+                      <p>Сервис и деплой на python разработчике.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="about_vacancy_wrapper_blocks">
+                  <h4>Требования</h4>
+                  <div class="about_wrapper_list">
+                    <div>
+                      <div></div>
+                      <p>
+                        Владение алгоритмами работы с табличными
+                        пространственными данными, временными рядами, аудио,
+                        текстами, гео процессами (опыт от 2 лет совокупно)
+                      </p>
+                    </div>
+                    <div>
+                      <div></div>
+                      <p>
+                        Python3, включая стек библиотек для работы с машинным
+                        обучением
+                      </p>
+                    </div>
+
+                    <div>
+                      <div></div>
+                      <p>
+                        Общение с бизнесом по проектам машинного обучения,
+                        ориентацией на бизнес результат, для senior
+                        дополнительный опыт управления проектами, в которых
+                        участвует несколько команд
+                      </p>
+                    </div>
+                    <div>
+                      <div></div>
+                      <p>sql, jupyter, pycharm, git, jira, confluence.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -527,7 +772,7 @@
               </div>
               <div class="main_form_file underline">
                 <input type="file" id="file-upload" multiple />
-                <label for="file-upload"  class="file-upload">
+                <label for="file-upload" class="file-upload">
                   Прикрепить файл с резюме
                   <img src="./assets/logos/file-upload.svg" alt="attach-icon"
                 /></label>
@@ -536,7 +781,7 @@
               <div class="main_form_file underline">
                 <input type="file" id="file-upload-2" multiple />
                 <label for="file-upload" class="file-upload">
-                    Прикрепить файл с тестовым заданием
+                  Прикрепить файл с тестовым заданием
                   <img src="./assets/logos/file-upload.svg" alt="attach-icon"
                 /></label>
                 <div id="file-upload-filename-2"></div>
