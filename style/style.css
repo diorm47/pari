@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Montserrat";
 }
+html,
+body {
+  overflow-x: hidden;
+}
 .navbar {
   padding: 23px 0;
 }
@@ -58,9 +62,16 @@
 .set_second .header_wrapper {
   background: transparent;
 }
-.set_second .nav_logo_first,
-.set_second .toggle_text_nav {
+.white_burger {
   display: none;
+}
+.set_second .nav_logo_first,
+.set_second .toggle_text_nav,
+.set_second .black_burger {
+  display: none;
+}
+.set_second .white_burger {
+  display: block;
 }
 .set_second .toggle_text_nav_2 {
   display: block !important;
@@ -935,7 +946,7 @@ footer {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 50% !important;
+    width: 300px !important;
 
     background: #000000e0;
     color: #ffffff;
@@ -951,10 +962,11 @@ footer {
   .mob_menu_wrapper .mob_menu_overlay {
     display: flex;
   }
+
   .close_menu {
     position: absolute;
-    top: 24px;
-    right: 24px;
+    top: 38px;
+    right: 31px;
     cursor: pointer;
     z-index: 2002;
   }
@@ -1055,7 +1067,7 @@ footer {
   .left_tec h2 {
     font-style: normal;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 120%;
     margin-bottom: 20px;
   }
@@ -1114,7 +1126,7 @@ footer {
   .set_second .header-text h2,
   .header-text h2 {
     font-size: 36px;
-
+    line-height: 120%;
     margin-bottom: 60px;
   }
   .header-buttons .btn {
@@ -1207,6 +1219,12 @@ footer {
   .left_tree .top_tree_img {
     margin-right: -85px;
     margin-bottom: 18px;
+  }
+  .right_tec_img img {
+    width: 70%;
+  }
+  .left_col img {
+    width: 80%;
   }
 }
 @keyframes from_right {
