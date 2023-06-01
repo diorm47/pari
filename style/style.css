@@ -14,6 +14,9 @@
 .navbar-brand img {
   height: 40px;
 }
+.header_container {
+  position: relative;
+}
 
 .navbar-nav .nav-link {
   font-weight: 700;
@@ -892,12 +895,6 @@ footer {
   margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 770px) {
-  .main_form_file {
-    margin-left: -20px;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .main_form_file input[type="file"] {
     width: 40px;
@@ -910,4 +907,313 @@ footer {
 }
 .set_second {
   padding-top: 0 !important;
+}
+
+/* Responsibility mode */
+
+.nav_list_wrapper .close_menu,
+.nav_list_wrapper .nav_logo,
+.nav_list_wrapper .mob_menu_overlay {
+  display: none;
+}
+.nav_menu {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .navbar .navbar-nav {
+    display: none;
+  }
+  .nav_menu {
+    display: block;
+  }
+  .mob_menu_wrapper {
+    display: flex !important;
+    align-items: start;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50% !important;
+
+    background: #000000e0;
+    color: #ffffff;
+    z-index: 999;
+    padding-left: 30px;
+    padding-top: 60px;
+  }
+  .mob_menu_wrapper .nav-link {
+    color: #fff;
+  }
+  .mob_menu_wrapper .close_menu,
+  .mob_menu_wrapper .nav_logo,
+  .mob_menu_wrapper .mob_menu_overlay {
+    display: flex;
+  }
+  .close_menu {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+    z-index: 2002;
+  }
+  .mob_menu_wrapper {
+    transform: translateX(-150%);
+    animation: from_right 0.3s forwards;
+  }
+
+  .tree_blocks_wrapper,
+  .tecnologies_block,
+  .gallery_row_images,
+  .second_view,
+  .team_block {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .tecnologies_list,
+  .gallery__col_position_images,
+  .marquee_bottom_text,
+  .footer_wrapper {
+    width: 100%;
+  }
+  .left_tree,
+  .right_tree,
+  .vakancies_lists_wrapper,
+  .vakancies_lists {
+    width: 100% !important;
+    align-items: center !important;
+  }
+  .left_team p {
+    padding: 0;
+  }
+  .second_view {
+    width: 100% !important;
+  }
+  .second_view div {
+    width: 100%;
+  }
+  .vakancies_lists_wrapper {
+    overflow-x: scroll;
+    width: 100%;
+  }
+  .main_form_form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .gallery_block img {
+    position: static;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .marquee_bottom_text {
+    align-items: center;
+    text-align: center;
+  }
+  .gallery_row_images {
+    padding: 0;
+  }
+  .main_form_form .form_left_groups,
+  .main_form_form .form_right_groups {
+    width: 100% !important;
+  }
+  .footer_wrapper {
+    margin: 0 !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  footer {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .gallery_text {
+    margin-bottom: 30px;
+  }
+  .gallery_text p {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+  }
+  .top_1_img {
+    margin-bottom: 0px;
+  }
+  .left_col,
+  .right_team,
+  .right_tec_img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .left_team h2,
+  .left_tec h2 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+  .left_tec p {
+    margin-right: 0;
+  }
+  .tecnologies_list div {
+    margin-left: 20px;
+  }
+  .tecnologies_list {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .advantage_text {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .advantage_text h3 {
+    font-size: 32px;
+    line-height: 120%;
+  }
+  .header {
+    padding: 40px 0 40px;
+  }
+  .second_view {
+    padding-top: 30px;
+  }
+  .btn-left {
+    margin-bottom: 20px !important;
+  }
+  .navbar-brand img {
+    width: 140px;
+  }
+  .header-buttons {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-buttons button {
+    width: 70% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .vakancies_lists {
+    width: 1220px !important;
+  }
+  .vakancies_lists .vakancy_list_item_wrapper {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .header {
+    padding: 20px 0 20px;
+  }
+  .set_second .header-text h2,
+  .header-text h2 {
+    font-size: 36px;
+
+    margin-bottom: 60px;
+  }
+  .header-buttons .btn {
+    font-size: 16px;
+    line-height: 100% !important;
+    border-radius: 10px;
+  }
+  .right_col p,
+  .left_team p {
+    font-size: 14px !important;
+    line-height: 120% !important;
+  }
+  .right_team img {
+    width: 100%;
+  }
+  .second_view {
+    padding-bottom: 20px;
+  }
+  .tecnologies_list {
+    align-items: center;
+    justify-content: center;
+  }
+  .vacancies_block {
+    padding-top: 30px;
+  }
+  .vacancies_block p {
+    font-size: 30px;
+    line-height: 120%;
+  }
+  .vacancies_block p {
+    font-size: 20px;
+    line-height: 120%;
+  }
+  .marquee_bottom_text {
+    margin-bottom: 30px;
+  }
+  .vakancy_list_item .vakancy_list_item_1 {
+    padding-left: 15px;
+  }
+  .vakancies_lists .vakancy_list_item_wrapper {
+    padding-top: 25px;
+  }
+  .vakancies_top_head {
+    width: 1220px;
+  }
+  .main_form_file label {
+    line-height: 120%;
+  }
+  .right_main_cols .tree_main_col_box {
+    margin-left: 15px;
+    width: 249px;
+    height: 88px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .left_main_col .tree_main_col_box {
+    margin-right: 15px;
+    width: 249px;
+    height: 88px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .tree_main_col_box h4,
+  .tree_main_col_box p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 110%;
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 0;
+  }
+  .tree_main_col_box p {
+    font-weight: 400;
+    margin-top: 6px;
+  }
+  .right_main_col img {
+    height: 355px;
+  }
+  .left_main_col img {
+    height: 355px;
+  }
+  .left_tree .top_tree_img {
+    margin-right: -85px;
+    margin-bottom: 18px;
+  }
+}
+@keyframes from_right {
+  0% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

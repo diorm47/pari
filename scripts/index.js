@@ -56,7 +56,6 @@ function showFileName2(event) {
 
 // Accordeon
 const buttons = document.querySelectorAll("button");
-
 buttons.forEach((button) => {
   button.addEventListener("click", function () {
     const targetId = this.getAttribute("data-target");
@@ -72,7 +71,7 @@ buttons.forEach((button) => {
 });
 
 // Header toggler
-const buttons2 = document.querySelectorAll("button");
+const buttons2 = document.querySelectorAll(".header_togle_btn");
 
 buttons2.forEach((buttons2) => {
   buttons2.addEventListener("click", function () {
@@ -87,3 +86,10 @@ buttons2.forEach((buttons2) => {
     }
   });
 });
+
+// Mobile menu
+
+function toggleMenu() {
+  var element = document.querySelector(".navbar-nav");
+  element.classList.toggle("mob_menu_wrapper");
+}

@@ -24,7 +24,7 @@
   <body>
     <div class="header_container" id="header_toggles">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
+        <div class="container nav_list_wrapper">
           <a class="navbar-brand" href="#">
             <img
               src="./assets/logos/Pari logo.svg"
@@ -38,12 +38,18 @@
             />
           </a>
           <div class="navbar-nav">
+            <div class="close_menu" onclick="toggleMenu()">
+              <img src="./assets/logos/close_menu.svg" alt="close_menu" />
+            </div>
             <p class="nav-link scroll_to_second_view">О компании</p>
             <p class="nav-link scroll_to_team_block">Data Team</p>
             <p class="nav-link scroll_to_tecnologies_block">Наш стек</p>
             <p class="nav-link scroll_to_vacancies_block">Вакансии</p>
             <p class="nav-link toggle_text_nav">Бонус за рекомендацию</p>
             <p class="nav-link toggle_text_nav_2">Голда за рекомендацию</p>
+          </div>
+          <div class="nav_menu" onclick="toggleMenu()">
+            <img src="./assets/logos/menu.svg" alt="nav menu" />
           </div>
         </div>
       </nav>
@@ -72,7 +78,10 @@
               Отлично, я хочу посмотреть <br />
               <span>вакансии</span>
             </button>
-            <button class="btn btn-right" data-target="header_toggles">
+            <button
+              class="btn btn-right header_togle_btn"
+              data-target="header_toggles"
+            >
               Драфтуйте меня скорее! <br />
               <span>«Дауби!»</span>
             </button>
@@ -81,7 +90,7 @@
       </header>
     </div>
 
-    <div class="second_view container">
+    <div class="second_view">
       <div class="left_col">
         <img src="./assets/logos/companies.svg" alt=" companies_list" />
       </div>
