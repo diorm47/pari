@@ -72,23 +72,39 @@ buttons.forEach((button) => {
 
 // Header toggler
 const buttons2 = document.querySelectorAll(".header_togle_btn");
+const header_togle_btn_2 = document.querySelectorAll(".btn-left");
 
 buttons2.forEach((buttons2) => {
-  buttons2.addEventListener("click", function () {
+  buttons2.addEventListener("mouseover", function () {
     const targetId = this.getAttribute("data-target");
     const targetDiv = document.getElementById(targetId);
-    if (targetDiv.classList.contains("set_second")) {
-      targetDiv.classList.remove("set_second");
-      targetDiv.classList.add("set_first");
-    } else {
-      targetDiv.classList.remove("set_first");
-      targetDiv.classList.add("set_second");
-    }
+    targetDiv.classList.add("set_second");
+  });
+});
+buttons2.forEach((buttons2) => {
+  buttons2.addEventListener("mouseout", function () {
+    const targetId = this.getAttribute("data-target");
+    const targetDiv = document.getElementById(targetId);
+    targetDiv.classList.remove("set_second");
+  });
+});
+
+header_togle_btn_2.forEach((header_togle_btn_2) => {
+  header_togle_btn_2.addEventListener("mouseout", function () {
+    const targetId = this.getAttribute("data-target");
+    const targetDiv = document.getElementById(targetId);
+    targetDiv.classList.remove("set_first");
+  });
+});
+header_togle_btn_2.forEach((header_togle_btn_2) => {
+  header_togle_btn_2.addEventListener("mouseover", function () {
+    const targetId = this.getAttribute("data-target");
+    const targetDiv = document.getElementById(targetId);
+    targetDiv.classList.add("set_first");
   });
 });
 
 // Mobile menu
-
 function toggleMenu() {
   var element = document.querySelector(".navbar-nav");
   element.classList.toggle("mob_menu_wrapper");

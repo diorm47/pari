@@ -21,9 +21,16 @@ body {
 .header_container {
   position: relative;
 }
+.nav_bar_wrapper {
+  width: 100%;
+  position: fixed;
+  z-index: 111;
+  top: 0;
+}
 
 .navbar-nav .nav-link {
   font-weight: 700;
+  background: #fff;
   font-size: 18px;
   line-height: 22px;
   color: #343a40;
@@ -37,14 +44,27 @@ body {
   transition: all 0.3s ease;
   text-decoration: underline;
 }
+.set_second .nav-link {
+  background: transparent;
+}
 
 .header_wrapper {
   width: 100%;
-  margin-top: 50px;
-  background: url(../assets/images/header_svg_background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+}
+.set_first {
+  background: url(../assets/header_svg_background.jpg);
+  background-position: right top;
   background-size: cover;
+  animation: bg 15s linear infinite;
+}
+
+@keyframes bg {
+  0% {
+    background-position: right top;
+  }
+  100% {
+    background-position: calc(100% + 100vh) calc(-100% - 100vh);
+  }
 }
 
 /* Header */
@@ -103,10 +123,11 @@ body {
   text-align: center;
 }
 .set_second .header {
-  padding-bottom: 35px;
+  padding-bottom: 125px;
 }
 .header-logo {
-  margin: 20px 0 50px;
+  margin: 0px 0 50px;
+  margin-top: 150px;
 }
 .header-text h2 {
   font-weight: 300;
@@ -123,15 +144,18 @@ body {
   border-radius: 15px;
 }
 .header-buttons .btn-left {
-  background-color: #00c7b1;
   transition: all 0.3s ease;
 }
 .header-buttons .btn-left:hover {
-  background-color: #13e2ca;
+  background-color: #00c7b1;
+  transition: all 0.3s ease;
+}
+.header-buttons .btn-left:hover span {
+  color: #fff;
   transition: all 0.3s ease;
 }
 .header-buttons .btn-left span {
-  color: #fff;
+  color: #00c7b1;
   text-decoration: underline;
 }
 .header-buttons .btn-right {
@@ -164,7 +188,20 @@ body {
     height: 89px;
   }
 }
+.header_wrapper .container div {
+  animation: ani 2s forwards;
+}
 
+@keyframes ani {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .second_view {
   width: 80%;
   margin: 0 auto;
@@ -341,6 +378,7 @@ body {
   width: 1190px;
   margin: 0 auto;
   align-items: center;
+  justify-content: space-between;
 }
 .tecnologies_list div {
   display: flex;

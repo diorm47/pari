@@ -22,73 +22,85 @@
   </head>
 
   <body>
-    <div class="header_container" id="header_toggles">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container nav_list_wrapper">
-          <a class="navbar-brand" href="#">
-            <img
-              src="./assets/logos/Pari logo.svg"
-              class="nav_logo_first"
-              alt="header logo"
-            />
-            <img
-              src="./assets/logos/darken Pari logo.svg"
-              class="nav_logo_second"
-              alt="header logo"
-            />
-          </a>
-          <div class="navbar-nav">
-            <div class="close_menu" onclick="toggleMenu()">
-              <img src="./assets/logos/close_menu.svg" alt="close_menu" />
+    <div class="header_block" id="header_togle_btn_2">
+      <div class="header_container" id="header_toggles">
+        <div class="nav_bar_wrapper">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container nav_list_wrapper">
+              <a class="navbar-brand" href="#">
+                <img
+                  src="./assets/logos/Pari logo.svg"
+                  class="nav_logo_first"
+                  alt="header logo"
+                />
+                <img
+                  src="./assets/logos/darken Pari logo.svg"
+                  class="nav_logo_second"
+                  alt="header logo"
+                />
+              </a>
+              <div class="navbar-nav">
+                <div class="close_menu" onclick="toggleMenu()">
+                  <img src="./assets/logos/close_menu.svg" alt="close_menu" />
+                </div>
+                <p class="nav-link scroll_to_second_view">О компании</p>
+                <p class="nav-link scroll_to_team_block">Data Team</p>
+                <p class="nav-link scroll_to_tecnologies_block">Наш стек</p>
+                <p class="nav-link scroll_to_vacancies_block">Вакансии</p>
+                <p class="nav-link toggle_text_nav">Бонус за рекомендацию</p>
+                <p class="nav-link toggle_text_nav_2">Голда за рекомендацию</p>
+              </div>
+              <div class="nav_menu" onclick="toggleMenu()">
+                <img
+                  src="./assets/logos/menu.svg"
+                  class="black_burger"
+                  alt="nav menu"
+                />
+                <img
+                  src="./assets/logos/burger_menu.svg"
+                  class="white_burger"
+                  alt="nav menu"
+                />
+              </div>
             </div>
-            <p class="nav-link scroll_to_second_view">О компании</p>
-            <p class="nav-link scroll_to_team_block">Data Team</p>
-            <p class="nav-link scroll_to_tecnologies_block">Наш стек</p>
-            <p class="nav-link scroll_to_vacancies_block">Вакансии</p>
-            <p class="nav-link toggle_text_nav">Бонус за рекомендацию</p>
-            <p class="nav-link toggle_text_nav_2">Голда за рекомендацию</p>
-          </div>
-          <div class="nav_menu" onclick="toggleMenu()">
-            <img src="./assets/logos/menu.svg" class="black_burger" alt="nav menu" />
-            <img src="./assets/logos/burger_menu.svg" class="white_burger" alt="nav menu" />
-          </div>
+          </nav>
         </div>
-      </nav>
-      <header class="header header_wrapper">
-        <div class="container">
-          <div class="header-logo">
-            <img
-              src="./assets/logos/header-logo.svg"
-              class="nav_logo_first"
-              alt=""
-            />
-            <img
-              src="./assets/logos/darken-header-logo.svg"
-              class="nav_logo_second"
-              alt=""
-            />
+        <header class="header header_wrapper">
+          <div class="container">
+            <div class="header-logo">
+              <img
+                src="./assets/logos/header-logo.svg"
+                class="nav_logo_first"
+                alt=""
+              />
+              <img
+                src="./assets/logos/darken-header-logo.svg"
+                class="nav_logo_second"
+                alt=""
+              />
+            </div>
+            <div class="header-text">
+              <h2>
+                Ало, мы ищем DataScience <br />
+                специалистов
+              </h2>
+            </div>
+            <div class="header-buttons">
+              <button class="btn btn-left" data-target="header_togle_btn_2">
+                Отлично, я хочу посмотреть <br />
+                <span>вакансии</span>
+              </button>
+              <button
+                class="btn btn-right header_togle_btn"
+                data-target="header_toggles"
+              >
+                Драфтуйте меня скорее! <br />
+                <span>«Дауби!»</span>
+              </button>
+            </div>
           </div>
-          <div class="header-text">
-            <h2>
-              Ало, мы ищем DataScience <br />
-              специалистов
-            </h2>
-          </div>
-          <div class="header-buttons">
-            <button class="btn btn-left">
-              Отлично, я хочу посмотреть <br />
-              <span>вакансии</span>
-            </button>
-            <button
-              class="btn btn-right header_togle_btn"
-              data-target="header_toggles"
-            >
-              Драфтуйте меня скорее! <br />
-              <span>«Дауби!»</span>
-            </button>
-          </div>
-        </div>
-      </header>
+        </header>
+      </div>
     </div>
 
     <div class="second_view">
