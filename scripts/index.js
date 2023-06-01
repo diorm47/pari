@@ -70,3 +70,20 @@ buttons.forEach((button) => {
     }
   });
 });
+
+// Header toggler
+const buttons2 = document.querySelectorAll("button");
+
+buttons2.forEach((buttons2) => {
+  buttons2.addEventListener("click", function () {
+    const targetId = this.getAttribute("data-target");
+    const targetDiv = document.getElementById(targetId);
+    if (targetDiv.classList.contains("set_second")) {
+      targetDiv.classList.remove("set_second");
+      targetDiv.classList.add("set_first");
+    } else {
+      targetDiv.classList.remove("set_first");
+      targetDiv.classList.add("set_second");
+    }
+  });
+});

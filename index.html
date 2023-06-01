@@ -22,43 +22,65 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/logos/Pari logo.svg" alt="header logo" />
-        </a>
-        <div class="navbar-nav">
-          <p class="nav-link scroll_to_second_view">О компании</p>
-          <p class="nav-link scroll_to_team_block">Data Team</p>
-          <p class="nav-link scroll_to_tecnologies_block">Наш стек</p>
-          <p class="nav-link scroll_to_vacancies_block">Вакансии</p>
-          <p class="nav-link">Бонус за рекомендацию</p>
+    <div class="header_container" id="header_toggles">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/logos/Pari logo.svg"
+              class="nav_logo_first"
+              alt="header logo"
+            />
+            <img
+              src="./assets/logos/darken Pari logo.svg"
+              class="nav_logo_second"
+              alt="header logo"
+            />
+          </a>
+          <div class="navbar-nav">
+            <p class="nav-link scroll_to_second_view">О компании</p>
+            <p class="nav-link scroll_to_team_block">Data Team</p>
+            <p class="nav-link scroll_to_tecnologies_block">Наш стек</p>
+            <p class="nav-link scroll_to_vacancies_block">Вакансии</p>
+            <p class="nav-link toggle_text_nav">Бонус за рекомендацию</p>
+            <p class="nav-link toggle_text_nav_2">Голда за рекомендацию</p>
+          </div>
         </div>
-      </div>
-    </nav>
-    <header class="header header_wrapper">
-      <div class="container">
-        <div class="header-logo">
-          <img src="./assets/logos/header-logo.svg" alt="" />
+      </nav>
+      <header class="header header_wrapper">
+        <div class="container">
+          <div class="header-logo">
+            <img
+              src="./assets/logos/header-logo.svg"
+              class="nav_logo_first"
+              alt=""
+            />
+            <img
+              src="./assets/logos/darken-header-logo.svg"
+              class="nav_logo_second"
+              alt=""
+            />
+          </div>
+          <div class="header-text">
+            <h2>
+              Ало, мы ищем DataScience <br />
+              специалистов
+            </h2>
+          </div>
+          <div class="header-buttons">
+            <button class="btn btn-left">
+              Отлично, я хочу посмотреть <br />
+              <span>вакансии</span>
+            </button>
+            <button class="btn btn-right" data-target="header_toggles">
+              Драфтуйте меня скорее! <br />
+              <span>«Дауби!»</span>
+            </button>
+          </div>
         </div>
-        <div class="header-text">
-          <h2>
-            Ало, мы ищем DataScience <br />
-            специалистов
-          </h2>
-        </div>
-        <div class="header-buttons">
-          <button class="btn btn-left">
-            Отлично, я хочу посмотреть <br />
-            <span>вакансии</span>
-          </button>
-          <button class="btn btn-right">
-            Драфтуйте меня скорее! <br />
-            <span>«Дауби!»</span>
-          </button>
-        </div>
-      </div>
-    </header>
+      </header>
+    </div>
+
     <div class="second_view container">
       <div class="left_col">
         <img src="./assets/logos/companies.svg" alt=" companies_list" />
@@ -375,15 +397,23 @@
           <div id="item1" class="vakancy_list_item_wrapper">
             <div class="vakancy_list_item">
               <div class="vakancy_list_item_1"><p>24.04.23</p></div>
-              <div class="vakancy_list_item_2"><p>Data Scientist</p></div>
+              <div class="vakancy_list_item_2">
+                <button class="data_target" data-target="item1">
+                  <p>Data Scientist</p>
+                </button>
+              </div>
               <div class="vakancy_list_item_3">
-                <p>
-                  Research & <br />
-                  Development
-                </p>
+                <button class="data_target" data-target="item1">
+                  <p>
+                    Research & <br />
+                    Development
+                  </p>
+                </button>
               </div>
               <div class="vakancy_list_item_4">
-                <p>по результатам собеседования</p>
+                <button class="data_target" data-target="item1">
+                  <p>по результатам собеседования</p>
+                </button>
               </div>
               <div class="vakancy_list_item_5">
                 <div class="companies_logos">
@@ -391,7 +421,7 @@
                   <img src="./assets/logos/linkedin-logo.svg" alt="" />
                 </div>
                 <div class="list_5_btns">
-                  <button data-target="item1">Оставить отклик</button>
+                  <button>Оставить отклик</button>
                   <button class="list_5_btn">
                     Рекомендовать <br />
                     другу
@@ -492,12 +522,20 @@
             </div>
             <div class="vakancy_list_item">
               <div class="vakancy_list_item_1"><p>24.04.23</p></div>
-              <div class="vakancy_list_item_2"><p>Data Scientist</p></div>
+              <div class="vakancy_list_item_2">
+                <button class="data_target" data-target="item2">
+                  <p>Data Scientist</p>
+                </button>
+              </div>
               <div class="vakancy_list_item_3">
-                <p>Business Intelligence</p>
+                <button class="data_target" data-target="item2">
+                  <p>Business Intelligence</p>
+                </button>
               </div>
               <div class="vakancy_list_item_4">
-                <p>по результатам собеседования</p>
+                <button class="data_target" data-target="item2">
+                  <p>по результатам собеседования</p>
+                </button>
               </div>
               <div class="vakancy_list_item_5">
                 <div class="companies_logos">
@@ -505,7 +543,7 @@
                   <img src="./assets/logos/linkedin-logo.svg" alt="" />
                 </div>
                 <div class="list_5_btns">
-                  <button data-target="item2">Оставить отклик</button>
+                  <button>Оставить отклик</button>
                   <button class="list_5_btn">
                     Рекомендовать <br />
                     другу
@@ -606,12 +644,23 @@
             </div>
             <div class="vakancy_list_item">
               <div class="vakancy_list_item_1"><p>24.04.23</p></div>
-              <div class="vakancy_list_item_2"><p>Data Scientist</p></div>
+              <div class="vakancy_list_item_2">
+                <button class="data_target" data-target="item3">
+                  <p>Data Scientist</p>
+                </button>
+              </div>
               <div class="vakancy_list_item_3">
-                <p>Business Intelligence</p>
+                <button class="data_target" data-target="item3">
+                  <p>
+                    Research & <br />
+                    Development
+                  </p>
+                </button>
               </div>
               <div class="vakancy_list_item_4">
-                <p>по результатам собеседования</p>
+                <button class="data_target" data-target="item3">
+                  <p>по результатам собеседования</p>
+                </button>
               </div>
               <div class="vakancy_list_item_5">
                 <div class="companies_logos">
@@ -619,7 +668,7 @@
                   <img src="./assets/logos/linkedin-logo.svg" alt="" />
                 </div>
                 <div class="list_5_btns">
-                  <button data-target="item3">Оставить отклик</button>
+                  <button>Оставить отклик</button>
                   <button class="list_5_btn">
                     Рекомендовать <br />
                     другу

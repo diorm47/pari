@@ -41,9 +41,55 @@
 }
 
 /* Header */
+.nav_logo_second,
+.toggle_text_nav_2 {
+  display: none !important;
+}
+.set_second {
+  background: url(../assets/images/darken-bg.png) !important;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.set_second .header_wrapper {
+  background: transparent;
+}
+.set_second .nav_logo_first,
+.set_second .toggle_text_nav {
+  display: none;
+}
+.set_second .toggle_text_nav_2 {
+  display: block !important;
+}
+.set_second .nav_logo_second {
+  margin: 0 auto;
+  display: flex !important;
+}
+.set_second .navbar-nav .nav-link {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+.set_second .header-text h2 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 67px;
+  text-align: center;
+
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .header {
   padding: 76px 0 125px;
   text-align: center;
+}
+.set_second .header {
+  padding-bottom: 35px;
 }
 .header-logo {
   margin: 20px 0 50px;
@@ -80,6 +126,23 @@
 .header-buttons .btn-right span {
   color: #b40091;
   text-decoration: underline;
+}
+.set_second .header-buttons .btn-left {
+  background: transparent;
+  color: #fff;
+}
+.set_second .header-buttons .btn-left span {
+  color: #00c7b1;
+}
+.set_second .header-buttons .btn-right {
+  background: #b40091;
+  color: #fff;
+}
+.set_second .header-buttons .btn-right span {
+  color: #fff;
+}
+.set_second {
+  padding-top: 0 !important;
 }
 @media (min-width: 576px) {
   .header-buttons .btn {
@@ -558,13 +621,18 @@
   color: #00c7b1 !important;
   background: transparent !important;
 }
+.vakancies_lists .data_target {
+  border: none;
+  background: transparent;
+  cursor: default;
+}
 
 /* Accordeon */
 .vakancies_lists .vakancies_top_head {
   display: none;
 }
 .about_vacancy {
-    display: none;
+  display: none;
 }
 .open_accordeon {
   padding-top: 20px !important;
@@ -834,4 +902,12 @@ footer {
   .main_form_file input[type="file"] {
     width: 40px;
   }
+}
+.navbar {
+  padding: 22px 0 !important;
+  background: transparent !important;
+  padding-bottom: 0px !important;
+}
+.set_second {
+  padding-top: 0 !important;
 }
